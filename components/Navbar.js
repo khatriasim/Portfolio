@@ -6,15 +6,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="flex items-center justify-between h-16 px-4 relative">
+    <nav className="flex items-center justify-between h-16 px-4 relative items-center">
       <div className="flex items-center gap-2 font-bold text-lg">
+        <Link href={'/'} className="flex items-center">
         <lord-icon 
           src="https://cdn.lordicon.com/vrexohmd.json"
           trigger="loop"
           state="in-reveal"
           style={{ width: '60px', height: '60px' }}
         />
-        <Link href={'/'}>
         <h1 className="text-3xl text-violet-600">Asim...</h1>
         </Link>
       </div>
@@ -57,17 +57,17 @@ const Navbar = () => {
 >
 
         <li>
-          <Link href={"/"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl">Home</Link>
+          <Link href={"/"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl  font-ovo">Home</Link>
         </li>
         <li>
-          <Link href={"/aboutme"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl">About me</Link>
+          <Link href={"/aboutme"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl  font-ovo">About me</Link>
         </li>
         <li>
-          <Link href={"/contact"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl">Contact me</Link>
+          <Link href={"/contact"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl  font-ovo">Contact me</Link>
         </li>
       </ul>
 
-      <div className="hidden md:flex bg-green-500 px-3 py-1 rounded-full ring-amber-50">
+      <div className="hidden   md:flex bg-green-500 px-4 py-2 rounded-full ring-amber-50">
         <Link
           href="https://github.com/khatriasim?tab=repositories"
           className="flex items-center gap-2 text-white"

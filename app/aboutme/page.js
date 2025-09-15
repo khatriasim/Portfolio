@@ -2,6 +2,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useState } from "react";
+import Link from "next/link";
 
 const AboutMe = () => {
   const [text] = useTypewriter({
@@ -9,6 +10,7 @@ const AboutMe = () => {
     typeSpeed: 120,
     deleteSpeed: 50,
   });
+
 
   const [activesection, setactivesection] = useState('About')
 
@@ -18,7 +20,14 @@ const AboutMe = () => {
     Projects: "I've worked on various projects including responsive websites, interactive web applications, and modern UI components. Each project has taught me valuable lessons about problem-solving and user experience.",
     Intrests: "Beyond coding, I'm interested in UI/UX design, emerging web technologies, open source contributions, and continuous learning. I enjoy exploring new frameworks and building creative solutions."
   }
-
+ const download = () => {
+    const link = document.createElement('a');
+    link.href = '/Asim Cv.pdf'; // Path to your resume file in public folder
+    link.download = 'Asim_Khatri_Resume.pdf'; // Name for downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <h1 className="font-bold text-5xl mx-12 mt-9 mb-4">
@@ -31,8 +40,8 @@ const AboutMe = () => {
           <Cursor cursorStyle="|" />
         </span>
       </h2>
-      <div className="flex justify-center items-center mt-8">
-        <div className="rounded-full border-4 border-purple-500 p-6 shadow-lg shadow-purple-500/50">
+      <div className="flex justify-center items-center mt-6">
+        <div className="rounded-full border-4 border-purple-500  shadow-lg shadow-purple-500/50">
           <lord-icon 
             style={{ width: "200px", height: "200px" }}
             src="https://cdn.lordicon.com/aszjakup.json"
@@ -46,7 +55,7 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="flex gap-2 ml-14 mr-16 mt-8 md:mx-auto md:justify-center md:gap-20">
+      <div className="grid grid-cols-3 gap-2 ml-14 mr-16 mt-8 md:mx-auto md:justify-center md:gap-20 md:flex">
         <button 
           onClick={() => setactivesection('About')} 
           className="relative inline-flex items-center justify-center w-full md:w-auto p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
@@ -84,9 +93,23 @@ const AboutMe = () => {
         </button>
       </div>
 
-      <div className="ml-14 mr-16 md:mx-auto md:w-3/4 p-6 mb-4 mt-4 rounded-2xl bg-blue-300 border-4 border-purple-500 shadow-lg shadow-purple-500/50 flex flex-col">
+      <div className="ml-14 mr-16 md:mx-auto md:w-3/4 p-6 mb-4 mt-6 rounded-2xl bg-blue-300 border-4 border-purple-500 shadow-lg shadow-purple-500/50 flex flex-col">
         <h2 className="text-2xl font-bold mb-2 text-gray-800">{activesection}</h2>
         <p className="text-left leading-relaxed text-gray-700">{sectionContent[activesection]}</p>
+      </div>
+
+      <div className="mt-14 ">
+        <h1 className="text-center font-bold text-2xl">Let's WOrk Together!</h1>
+        <h2 className="mt-6 text-center">Intrested in collabrating or have a project in mind ?</h2>
+         <div className=" mb-26 flex gap-4 justify-center mt-8 ">
+                <Link href={"/contact"}> <button className="bg-blue-600 flex gap-3 text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors">
+            Contact me <img className="w-6 h-6" src="/con.svg" alt="" />
+          </button>
+          </Link> 
+  <button onClick={download} className="border flex gap-3 border-blue-600 text-blue-600 px-6 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+            My Resume <img className="w-6 h-6" src="/down.webp" alt="" />
+          </button>
+        </div>
       </div>
     </>
   );

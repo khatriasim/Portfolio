@@ -5,12 +5,14 @@ import Navbar from "@/components/Navbar";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight : ["400", "500", "600", "700"]
+  weight : ["400", "500", "600", "700"],
+  variable: '--font-outfit' 
 });
 
 const ovo = Ovo({
   subsets: ["latin"],
-weight : ["400"]
+weight : ["400"],
+variable: '--font-ovo'
 });
 
 export const metadata = {
