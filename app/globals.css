@@ -7,3 +7,11 @@
 .font-ovo {
   font-family: var(--font-ovo), serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
