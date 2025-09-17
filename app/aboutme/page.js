@@ -102,7 +102,7 @@ const AboutMe = () => {
         <h1 className="text-center font-bold text-2xl">Let's WOrk Together!</h1>
         <h2 className="mt-6 text-center">Intrested in collabrating or have a project in mind ?</h2>
          <div className=" mb-26 flex gap-4 justify-center mt-8 ">
-                <Link href={"/contact"}> <button className="bg-blue-600 flex gap-3 text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors">
+                <Link href={"/contactme"}> <button className="bg-blue-600 flex gap-3 text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors">
             Contact me <img className="w-6 h-6" src="/con.svg" alt="" />
           </button>
           </Link> 

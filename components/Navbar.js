@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link href={"/aboutme"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl  font-ovo">About me</Link>
         </li>
         <li>
-          <Link href={"/contact"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl  font-ovo">Contact me</Link>
+          <Link href={"/contactme"} onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition-colors md:text-2xl  font-ovo">Contact me</Link>
         </li>
       </ul>
 

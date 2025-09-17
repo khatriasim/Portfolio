@@ -42,7 +42,7 @@ export default function Home() {
         </p>
         
         <div className="flex gap-4 justify-center mt-10 ">
-                <Link href={"/contact"}> <button className="bg-blue-600 flex gap-3 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                <Link href={"/contactme"}> <button className="bg-blue-600 flex gap-3 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
             Contact me <img className="w-6 h-6" src="/con.svg" alt="" />
           </button>
           </Link> 
