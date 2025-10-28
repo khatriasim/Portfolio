@@ -13,7 +13,7 @@ const AboutSection = () => {
   const [activesection, setactivesection] = useState('About')
 
   const sectionContent = {
-    About: "I&apos;am a passionate front-end developer with a love for creating innovative web applications. My journey in programming started with curiosity and has grown into a deep passion for advanced technology",
+    About: "I'am a passionate front-end developer with a love for creating innovative web applications. My journey in programming started with curiosity and has grown into a deep passion for advanced technology",
     Skills: "My technical skills include HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I'm constantly learning new technologies and staying up-to-date with the latest web development trends.",
     Projects: "I worked on various projects including responsive websites, interactive web applications, and modern UI components. Each project has taught me valuable lessons about problem-solving and user experience.",
     Interests: "Beyond coding, I&apos;m interested in UI/UX design, emerging web technologies, open source contributions, and continuous learning. I enjoy exploring new frameworks and building creative solutions."
