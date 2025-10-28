@@ -1,6 +1,7 @@
 // app/components/AboutSection.jsx
 "use client"
 import React, { useState } from "react"
+import Image from "next/image"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 
 const AboutSection = () => {
@@ -87,21 +88,23 @@ const AboutSection = () => {
       <div className="mt-14">
         <h1 className="text-center font-bold text-2xl">Let&apos;s Work Together!</h1>
         <h2 className="mt-6 text-center">Interested in collaborating or have a project in mind?</h2>
-        <div className="mb-26 flex gap-4 justify-center mt-8">
-          <button 
-            onClick={() => scrollToSection('contact')} 
-            className="bg-blue-600 flex gap-3 text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Contact me <img className="w-6 h-6" src="/con.svg" alt="" />
-          </button>
-          
-          <button 
-            onClick={download} 
-            className="border flex gap-3 border-blue-600 text-blue-600 px-6 py-4 rounded-lg hover:bg-blue-50 transition-colors"
-          >
-            My Resume <img className="w-6 h-6" src="/down.webp" alt="" />
-          </button>
-        </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 px-4">
+                 <button 
+                   onClick={() => scrollToSection('contact')} 
+                   className="bg-blue-600 flex gap-3 items-center justify-center text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                 >
+                   Contact me 
+                   <Image src="/con.svg" alt="" width={24} height={24} />
+                 </button>
+                 
+                 <button 
+                   onClick={download} 
+                   className="border flex gap-3 items-center justify-center border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+                 >
+                   My Resume 
+                   <Image src="/down.webp" alt="" width={24} height={24} />
+                 </button>
+               </div>
       </div>
     </section>
   )
