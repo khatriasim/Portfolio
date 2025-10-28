@@ -13,10 +13,10 @@ const AboutSection = () => {
   const [activesection, setactivesection] = useState('About')
 
   const sectionContent = {
-    About: "I'am a passionate front-end developer with a love for creating innovative web applications. My journey in programming started with curiosity and has grown into a deep passion for advanced technology",
+    About: "I&apos;am a passionate front-end developer with a love for creating innovative web applications. My journey in programming started with curiosity and has grown into a deep passion for advanced technology",
     Skills: "My technical skills include HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I'm constantly learning new technologies and staying up-to-date with the latest web development trends.",
-    Projects: "I've worked on various projects including responsive websites, interactive web applications, and modern UI components. Each project has taught me valuable lessons about problem-solving and user experience.",
-    Interests: "Beyond coding, I'm interested in UI/UX design, emerging web technologies, open source contributions, and continuous learning. I enjoy exploring new frameworks and building creative solutions."
+    Projects: "I worked on various projects including responsive websites, interactive web applications, and modern UI components. Each project has taught me valuable lessons about problem-solving and user experience.",
+    Interests: "Beyond coding, I&apos;m interested in UI/UX design, emerging web technologies, open source contributions, and continuous learning. I enjoy exploring new frameworks and building creative solutions."
   }
 
   const download = () => {
@@ -41,7 +41,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="min-h-screen py-16 px-4">
       <h1 className="font-bold text-5xl mx-12 mb-4">
-        Hi, I'm<span className="text-purple-500">Asim</span>
+        Hi, I&apos;m<span className="text-purple-500">Asim</span>
       </h1>
       <h2 className="text-2xl mx-12">
         Learning{" "}
@@ -85,7 +85,7 @@ const AboutSection = () => {
       </div>
 
       <div className="mt-14">
-        <h1 className="text-center font-bold text-2xl">Let's Work Together!</h1>
+        <h1 className="text-center font-bold text-2xl">Let&apos;s Work Together!</h1>
         <h2 className="mt-6 text-center">Interested in collaborating or have a project in mind?</h2>
         <div className="mb-26 flex gap-4 justify-center mt-8">
           <button 

@@ -38,7 +38,7 @@ const HomeSection = () => {
       </div>
       
       <div className="text-center space-y-4">
-        <h1 className="text-3xl font-bold text-gray-800">Hi I'm Asim Khatri</h1>
+        <h1 className="text-3xl font-bold text-gray-800">Hi I&apos;m Asim Khatri</h1>
         <h2 className="text-xl text-blue-600 font-semibold">Frontend Web Developer</h2>
         
         <p className="text-gray-600 text-xl md:text-lg mx-8 md:max-w-2xl leading-relaxed">
