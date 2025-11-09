@@ -32,10 +32,10 @@ const ContactSection = () => {
       const data = await res.json()
 
       if (data.success) {
-        // Fix: Parse the ISO string properly
+     
         const now = new Date(data.createdAt)
         
-        // Check if date is valid before formatting
+     
         if (isNaN(now.getTime())) {
           // Fallback to current time if createdAt is invalid
           const currentTime = new Date()
