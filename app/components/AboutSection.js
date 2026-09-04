@@ -15,7 +15,7 @@ const AboutSection = () => {
   const [activesection, setactivesection] = useState('About')
 
   const sectionContent = {
-    About: "I'am a passionate front-end developer with a love for creating innovative web applications. My journey in programming started with curiosity and has grown into a deep passion for advanced technology",
+    About: "I'am a passionate fullstack developer with a love for creating innovative web applications. My journey in programming started with curiosity and has grown into a deep passion for advanced technology",
     Skills: "My technical skills include HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS. I'm constantly learning new technologies and staying up-to-date with the latest web development trends.Check out my projects  ",
      Projects: (
       <>
@@ -37,7 +37,7 @@ const AboutSection = () => {
 
   const download = () => {
     const link = document.createElement('a');
-    link.href = '/Asim Cv.pdf';
+    link.href = '/ASIMJOBCV.pdf';
     link.download = 'Asim_Khatri_Resume.pdf';
     document.body.appendChild(link);
     link.click();

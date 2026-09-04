@@ -46,9 +46,9 @@ const HomeSection = () => {
         <h2 className="text-lg sm:text-xl text-blue-600 font-semibold">Frontend Web Developer</h2>
         
         <p className="text-gray-600 text-base sm:text-lg md:text-xl mx-4 sm:mx-8 md:max-w-2xl leading-relaxed">
-          I am a frontend developer currently studying at Janamaitri College (7th Sem).
-          I have some experience and basic knowledge in Express.js, Next.js, MongoDB,
-          Node.js, and more knowledge with JavaScript, React, and Tailwind CSS.
+          I am a fullstack developer currently studying at Janamaitri College (8th Sem).
+          I have some experience and basic knowledge in Djnago, Fast API, Next.js, MongoDB,
+           and more knowledge with JavaScript, React, and Tailwind CSS, Docker, postgrace, Graphql API.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 px-4">
