@@ -43,7 +43,7 @@ const HomeSection = () => {
       
       <div className="text-center space-y-4">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">Hi I&apos;m Asim Khatri</h1>
-        <h2 className="text-lg sm:text-xl text-blue-600 font-semibold">Frontend Web Developer</h2>
+        <h2 className="text-lg sm:text-xl text-blue-600 font-semibold">Full Stack Web Developer</h2>
         
         <p className="text-gray-600 text-base sm:text-lg md:text-xl mx-4 sm:mx-8 md:max-w-2xl leading-relaxed">
           I am a fullstack developer currently studying at Janamaitri College (8th Sem).
